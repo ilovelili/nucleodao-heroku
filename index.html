@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Decentralized Data Architecture</title>
+  <meta name="description" content="Test the full stack of decentralized data architecture in a web browser." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="col-xs-offset-10 col-xs-2">
+          <span class="badge rounded-pill bg-secondary" id="userDID">Not Connected</span>
+        </div>
+      </div>
+      <h1>Decentralized Data Architecture Playground</h1>
+    </header>
+    <main class="container center">
+      <div id="instructions" class="hide">
+        You are connected. Open Console to see the detailed info (press F12)
+      </div>
+    </main>
+    <button id="bauth" type="button" class="btn btn-primary center" style="display: inherit; margin: 20px auto">
+      <div id="loader" class="loader hide"></div>
+      Connect
+    </button>
+
+    <div id="download" class="table-responsive hide">
+      <div style="text-align: center;"><b>Download the mini programs in our market place!</b></div>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td style="width: 33%;" class="app_download">
+              <button id="irisplex" type="button" class="btn btn-success btn-sm">Download IrisPlex</button>
+            </td>
+            <td style="width: 33%;" class="app_download">
+              <button id="app1" type="button" class="btn btn-warning btn-sm center">Download App1</button>
+            </td>
+            <td style="width: 33%;" class="app_download">
+              <button id="app2" type="button" class="btn btn-danger btn-sm center">Download App2</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="report" class="form-group shadow-textarea hide">
+      <label for="ta_report">IrisPlex Eye Model Anayltics Report</label>
+      <textarea class="form-control z-depth-1" id="ta_report" rows="5" disabled></textarea>
+    </div>
+
+    <div id="fileUploader" class="hide" style="margin: 20px auto">
+      <form id="fileUploadForm">
+        <input type="file" class="btn btn-primary center" id="fileUploadInput" />
+        <input type="submit" style="float: right;" />
+      </form>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="dist/app.js"></script>
+
+</html>
