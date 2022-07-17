@@ -7,6 +7,7 @@
   <title>Decentralized Data Architecture</title>
   <meta name="description" content="Test the full stack of decentralized data architecture in a web browser." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -53,7 +54,7 @@
 
     <div id="report" class="form-group shadow-textarea hide">
       <label for="ta_report">IrisPlex Eye Model Anayltics Report</label>
-      <textarea class="form-control z-depth-1" id="ta_report" rows="3" disabled></textarea>
+      <textarea class="form-control z-depth-1" id="ta_report" name="ta_report" rows="3" disabled></textarea>
     </div>
 
     <div id="fileUploader" class="hide" style="margin: 20px auto">
@@ -63,6 +64,17 @@
       </form>
     </div>
   </div>
+
+  <div id="recipient" class="form-group center hide">
+    <form id="shareDidForm">
+      <label for="did_recipient">Enter recipient DID to share your DID. You can find your Matta Wallet DID <a
+          href="https://nucleodao.herokuapp.com/Mattr_Public_DID.png">here</a> (Settings -> Public DID)</label>
+      <input class="form-control" type="text" placeholder="enter recipient did" id="did_recipient"
+        name="did_recipient" />
+      <input type="submit" style="float: right; margin-top: 10px;" />
+    </form>
+  </div>
+
 </body>
 <script type="text/javascript" src="dist/app.js"></script>
 
